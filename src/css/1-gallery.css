@@ -10,7 +10,7 @@ img {
 }
 
 .gallery {
-  margin: 0;
+  margin: 0 auto;
   padding: 24px 156px;
   max-width: 1440px;
   background: #fff;

@@ -1,4 +1,6 @@
-input {
+input,
+textarea,
+button {
   outline: none;
   border: none;
 }
@@ -28,6 +30,7 @@ input {
 }
 
 .feedback-form input {
+  box-sizing: border-box;
   width: 360px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -35,19 +38,25 @@ input {
   border-radius: 4px;
 }
 
-.feedback-form input:hover {
+.feedback-form input:hover,
+.feedback-form textarea:hover {
   box-shadow: none;
   border: solid, 1px, #000000;
 }
 
-.feedback-form input:active {
+.feedback-form input:active,
+.feedback-form textarea:active {
   box-shadow: none;
   border: solid, 1px, #808080;
 }
 
 .feedback-form textarea {
+  box-sizing: border-box;
   width: 360px;
   height: 80px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #808080;
+  border-radius: 4px;
 }
 
 .feedback-form button {
@@ -56,7 +65,7 @@ input {
   width: 95px;
   height: 40px;
   background: #4e75ff;
-  border-style: none;
+  /* border-style: none; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
